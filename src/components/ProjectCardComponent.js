@@ -6,18 +6,15 @@ import Image from "next/image";
 export default function ProjectCardComponent() {
 
     return (
-        <div className="w-screen md:h-auto mx-auto bg-gradient-to-r from-orange-900 to-blue-300 rounded-xl shadow-xl overflow-hidden ">
-            <div className="md:flex">
-                <div className="md:shrink-0 transition duration-500 md:ease-in-out hover:scale-105">
-                    <Image height={500} width={500} className="h-48 w-full object-cover md:h-full md:w-48" src="/images/test-pic.jpg" alt="Modern building architecture"/>
-                </div>
-                <div className="p-8">
-                    <div className="uppercase tracking-wide text-sm text-orange-600 font-semibold">Company retreats</div>
-                    <a href="#" className="block mt-1 text-lg leading-tight font-medium text-black hover:underline">Incredible accommodation for your team</a>
-                    <p className="mt-2 text-slate-500">Looking to take your team away on a retreat to enjoy awesome food and take in some sunshine? We have a list of places to do just that.</p>
-                </div>
+        <div className="surface-0 p-4 shadow-2 rounded-lg rounded-tl-3xl rounded-br-3xl border-2 bg-black xl:skew-x-3 hover:lg:scale-105 hover:scale-95 hover:z-50 transition duration-300 ">
+
+            <div className="mb-5 flex flex-col">
+                <img src={"https://picsum.photos/500/500"} className="  rounded-lg rounded-tl-3xl rounded-br-3xl w-full object-fill min-h-0 max-h-96 "></img>
             </div>
+
+            <div className="text-3xl font-medium text-900 mb-3">Card Title</div>
+            <div className="font-medium text-500 mb-3">Vivamus id nisl interdum, blandit augue sit amet, eleifend mi.</div>
         </div>
-        
+
     )
 }
