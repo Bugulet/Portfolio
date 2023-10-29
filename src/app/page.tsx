@@ -12,20 +12,21 @@ import Link from 'next/dist/client/link';
 export default function Home() {
   return (
     <>
-      <Container fluid className={styles.container}>
-        <Row>
-          <h1 className=" h-100 d-flex align-items-center justify-content-center align-middle">Hi, I'm Bugulet</h1>
-          <p className="d-flex align-items-center justify-content-center m-0">Buga Eusebiu Mihail</p>
-          <p className="d-flex align-items-center justify-content-center ">Programmer of all kinds</p>
-        </Row>
-        <Row>
-          <Nav className="h-100 p-3 d-flex align-items-center justify-content-center">
-            <Button className="m-1" href="/projects">Projects </Button>
-            <Button className="m-1" href="/blog">Blog</Button>
-            <Button className="m-1" href="/contacs">Contact</Button>
-          </Nav>
-        </Row>
-      </Container>
+      <h1 className='mb-4 text-4xl font-light leading-none m-10 text-center'>Hello!</h1>
+      <h2 className='mb-4 text-2xl font-bold leading-none m-10 text-center'>I'm Buga Eusebiu...</h2>
+      <h3 className='mb-4 text-md font-semibold leading-none m-10 text-center'>...or Bugulet 😄</h3>
+      <h1 className='mb-4 text-md font-light leading-none m-10 text-center'>Full stack developer from Europe</h1>
+      <ul className="flex justify-center">
+        <li className="mr-6">
+          <a className="text-slate-300 font-bold ring-2 p-2 rounded-lg hover:bg-blue-500" href="/projects">Projects</a>
+        </li>
+        <li className="mr-6">
+          <a className="text-blue-500 hover:text-blue-800" href="/blog">Blog</a>
+        </li>
+        <li className="mr-6">
+          <a className="text-blue-500 hover:text-blue-800" href="/contact">Contact</a>
+        </li>
+      </ul>
     </>
   )
 }

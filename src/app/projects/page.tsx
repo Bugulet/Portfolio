@@ -1,3 +1,8 @@
 export default function Projects(){
-    return(<h1>projects page</h1>);
+    return <>
+    <menu>
+    <button type="button" className="btn btn-dark">Dark</button>
+    </menu>
+    <div>AAAAAA</div>
+    </>
 }
