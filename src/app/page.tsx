@@ -7,15 +7,21 @@ import Col from 'react-bootstrap/esm/Col';
 import Row from 'react-bootstrap/esm/Row';
 import { Nav } from 'react-bootstrap';
 import Link from 'next/dist/client/link';
+import ButtonComponent from './components/buttonComponent';
 
 
 export default function Home() {
   return (
     <>
-      <h1 className='mb-4 text-4xl font-light leading-none m-10 text-center'>Hello!</h1>
-      <h2 className='mb-4 text-2xl font-bold leading-none m-10 text-center'>I'm Buga Eusebiu...</h2>
-      <h3 className='mb-4 text-md font-semibold leading-none m-10 text-center'>...or Bugulet 😄</h3>
-      <h1 className='mb-4 text-md font-light leading-none m-10 text-center'>Full stack developer from Europe</h1>
+      <h1 className='mb-4 text-2xl font-light leading-none m-10 text-center'>Hello!</h1>
+      <h2 className='mb-4 text-4xl font-bold leading-none m-10 text-center'>I'm Buga Eusebiu...</h2>
+      <h3 className='mb-4 text-md font-semibold leading-none m-2 text-center'>...or Bugulet 😄</h3>
+      <h1 className=' text-md font-light leading-none m-10 text-center'>Full stack developer from Europe</h1>
+
+      <div className='flex justify-center'>
+          <ButtonComponent content="CV" isActive={true} />
+          <ButtonComponent content="Linkedin" isActive={false} />
+      </div>
       <ul className="flex justify-center">
         <li className="mr-6">
           <a className="text-slate-300 font-bold ring-2 p-2 rounded-lg hover:bg-blue-500" href="/projects">Projects</a>
